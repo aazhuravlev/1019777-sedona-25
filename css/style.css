@@ -36,6 +36,7 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  margin-bottom: -23px;
 }
 
 .site-navigation a {
@@ -62,4 +63,32 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.main-logo {
+  position: relative;
+  width: 1200px;
+  height: 508px;
+  background-image: url("../img/background-photo.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 -83px;
+}
+
+.main-logo::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+
+  width: 1200px;
+  height: 59px;
+
+  content: "";
+
+  background-image: url("../img/polygon.svg");
+  background-repeat: no-repeat;
+}
+
+.main-logo img {
+  margin-top: 75px;
+  margin-left: 371px;
 }
