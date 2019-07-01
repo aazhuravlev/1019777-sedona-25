@@ -141,6 +141,10 @@ input[type="radio"].visually-hidden {
   margin-left: 371px;
 }
 
+.about-sedona {
+  margin-bottom: 50px;
+}
+
 .about-sedona .sedona-description {
   width: 440px;
   margin: 0 auto;
@@ -270,6 +274,10 @@ input[type="radio"].visually-hidden {
   padding-top: 47px;
 }
 
+.other-reasons .reason-description {
+  margin-bottom: 59px;
+}
+
 .other-reasons .reason-field-third {
   padding-left: 95px;
   padding-right: 95px;
@@ -283,4 +291,33 @@ input[type="radio"].visually-hidden {
 .other-reasons .reason-field-fifth {
   padding-left: 76px;
   padding-right: 75px;
+}
+
+.booking {
+  text-align: center;
+}
+
+.booking h2 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 24px;
+}
+
+.booking p {
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 47px;
+}
+
+.search-hotels-button {
+  font-size: 21px;
+  display: block;
+  width: 568px;
+  margin: 0 auto;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #766357;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
