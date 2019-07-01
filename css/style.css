@@ -19,7 +19,7 @@ body {
   line-height: 26px;
 }
 
-/*.visually-hidden:not(:focus):not(:active),
+.visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
@@ -37,7 +37,7 @@ input[type="radio"].visually-hidden {
   border: 0;
 
   clip-path: inset(100%);
-}*/
+}
 
 .main-header nav {
   display: flex;
@@ -256,4 +256,31 @@ input[type="radio"].visually-hidden {
 
 .second-reason .reason {
   padding-top: 46px;
+}
+
+.other-reasons {
+  display: flex;
+}
+
+.about-sedona .other-reason-field {
+  width: 400px
+}
+
+.other-reasons .reason {
+  padding-top: 47px;
+}
+
+.other-reasons .reason-field-third {
+  padding-left: 95px;
+  padding-right: 95px;
+}
+
+.other-reasons .reason-field-fourth {
+  padding-left: 69px;
+  padding-right: 68px;
+}
+
+.other-reasons .reason-field-fifth {
+  padding-left: 76px;
+  padding-right: 75px;
 }
