@@ -153,4 +153,98 @@ input[type="radio"].visually-hidden {
 
 .about-sedona .reasons {
   text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.about-sedona .reasons-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-sedona .reason-field {
+  text-align: center;
+
+  background-color: #eeeeee;
+  box-sizing: border-box;
+
+  line-height: 21px;
+}
+
+.reasons-list .reason {
+  font-size: 21px;
+  margin: 0;
+  margin-bottom: 24px;
+  padding-top: 49px;
+}
+
+.reasons-list .main-reason {
+  color: #ffffff;
+  background-color: #81b3d2;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper-main-reason {
+  width: 400px;
+  box-sizing: border-box;
+}
+
+.reasons-list .first-reason {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.reasons-list p {
+  margin: 0 auto;
+}
+
+.reasons-list .reason-number {
+  margin-bottom: 21px;
+}
+
+.reasons-list .reason-description {
+  margin-bottom: 58px;
+}
+
+.descriptions-list {
+  list-style: none;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0;
+  display: flex;
+}
+
+.descriptions-list li {
+  width: 400px;
+}
+
+.descriptions-list h2 {
+  font-size: 21px;
+  margin: 0;
+  margin-top: 161px;
+  margin-bottom: 24px;
+}
+
+.descriptions-list p {
+  margin-bottom: 82px;
+}
+
+.description-item-home {
+  background-image: url("../img/icon-home.svg");
+  background-repeat: no-repeat;
+  background-position: 162px 60px;
+}
+
+.description-item-food {
+  background-image: url("../img/icon-food.svg");
+  background-repeat: no-repeat;
+  background-position: 163px 61px;
+}
+
+.description-item-souvenirs {
+  background-image: url("../img/icon-souvenirs.svg");
+  background-repeat: no-repeat;
+  background-position: 168px 56px;
 }
