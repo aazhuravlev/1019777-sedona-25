@@ -1,13 +1,22 @@
+html {
+  background-color: #f2f2f2;
+}
+
 body {
   width: 1200px;
   margin: 0 auto;
   padding: 0;
 
+  text-transform: uppercase;
+
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 26px;
-  color: #000000;
 }
 
 /*.visually-hidden:not(:focus):not(:active),
@@ -30,30 +39,64 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
 }*/
 
-.site-navigation {
-  list-style: none;
+.main-header nav {
   display: flex;
   justify-content: space-between;
+}
+
+.site-navigation {
+  display: flex;
+
   margin: 0;
   padding: 0;
-  margin-bottom: -23px;
+
+  list-style: none;
+
+  background-color: #ffffff;
 }
+
 
 .site-navigation a {
   display: block;
+
+  margin: 0;
+  padding: 0;
   width: 239px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #000000;
-  font-weight: bold;
   padding-top: 14px;
   padding-bottom: 16px;
-  text-align: center;
+  box-sizing: border-box;
+
+  text-decoration: none;
+
+  color: #000000;
+
+  font-weight: bold;
 }
 
-.site-navigation .header-logo {
-  padding-top: 0;
-  padding-bottom: 0;
+.left-site-navigation a {
+  text-align: left;
+  padding-left: 72px;
+  padding-right: 10px;
+}
+
+.left-site-navigation .photo-link {
+  padding-left: 73px;
+}
+
+
+.right-site-navigation a {
+  text-align: right;
+  padding-right: 72px;
+  padding-left: 10px;
+}
+
+.right-site-navigation .map-link {
+  padding-right: 78px;
+}
+
+.header-logo {
+  margin-bottom: -23px;
+  z-index: 1;
 }
 
 .site-navigation a:hover,
@@ -66,10 +109,14 @@ input[type="radio"].visually-hidden {
 }
 
 .main-logo {
-  background-color: #81b3d2;
   position: relative;
+
   width: 1200px;
   height: 508px;
+  margin-bottom: 60px;
+
+  background-color: #81b3d2;
+  background-color: #81b3d2;
   background-image: url("../img/background-photo.jpg");
   background-repeat: no-repeat;
   background-position: 0 -83px;
@@ -92,4 +139,18 @@ input[type="radio"].visually-hidden {
 .main-logo img {
   margin-top: 75px;
   margin-left: 371px;
+}
+
+.about-sedona .sedona-description {
+  width: 440px;
+  margin: 0 auto;
+  margin-bottom: 27px;
+
+  text-align: center;
+
+  font-size: 21px;
+}
+
+.about-sedona .reasons {
+  text-align: center;
 }
