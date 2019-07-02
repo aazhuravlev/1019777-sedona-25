@@ -515,7 +515,6 @@ body {
 
 .modal-booking input {
   width: 346px;
-  height: 38px;
   box-sizing: border-box;
   background-color: #f2f2f2;
   border: none;
@@ -543,7 +542,7 @@ body {
 
 .modal-booking .adults-value {
   margin-left: 37px;
-  margin-right: 49px;
+  margin-right: 33px;
 }
 
 .modal-booking .childrens-value {
@@ -554,11 +553,21 @@ body {
   width: 114px;
   box-sizing: border-box;
   text-align: center;
-  margin-bottom: 54px;
+  margin-bottom: 0;
 }
 
 .modal-booking input:hover {
   background-color: #ebebeb;
+}
+
+.wrapper-modal-booking {
+  display: flex;
+  margin-bottom: 52px;
+  position: relative;
+}
+
+.wrapper-modal-booking label {
+  height: 38px;
 }
 
 .modal-booking input:focus {
@@ -602,7 +611,7 @@ body {
   width: 38px;
   height: 38px;
   border: none;
-  top: 12px;
+  bottom: 38px;
   background-color: transparent;
   cursor: pointer;
 }
@@ -611,31 +620,27 @@ body {
 .people-value-up-down::before {
   position: absolute;
   content: "";
-  top: 17px;
-  left: 13px;
+  top: 18px;
+  left: 12px;
   width: 12px;
   height: 3px;
   background-color: #cacaca;
-}
-
-.adults-value-down {
-  left: -166px;
-}
-
-.childrens-value-down {
-  left: -118px;
 }
 
 .people-value-up::after {
   transform: rotate(90deg);
 }
 
-.adults-value-up {
-  left: -132px;
+.adults-value-down {
+  left: -67px;
 }
 
-.childrens-value-up {
-  left: -84px;
+.childrens-value-down {
+  left: -34px;
+}
+
+.adults-value-up {
+  left: -32px;
 }
 
 .people-value-up-down:hover::after,
