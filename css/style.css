@@ -340,16 +340,23 @@ input[type="radio"].visually-hidden {
   border: 0;
 }
 
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: -1737px;
+  width: 1200px;
+  background-color: #ffffff;
+  opacity: 0.9;
+}
+
 .sedona-hashtag {
   font-size: 21px;
   font-weight: bold;
-  padding: 20px 0;
-  margin: 0;
-}
 
-.main-footer {
-  display: flex;
-  justify-content: space-around;
+  margin: 0;
+  margin-left: 133px;
 }
 
 .footer-social {
@@ -357,6 +364,8 @@ input[type="radio"].visually-hidden {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin: 36px 0;
+  margin-left: 26px;
 }
 
 .footer-social li {
@@ -388,21 +397,21 @@ input[type="radio"].visually-hidden {
 }
 
 .social-button-tw::before {
-  left: 16px;
-  top: 15px;
+  left: 15px;
+  top: 17px;
 
   background-image: url("../img/tw-icon.svg");
 }
 
 .social-button-fb::before {
   left: 17px;
-  top: 12px;
+  top: 13px;
 
   background-image: url("../img/fb-icon.svg");
 }
 
 .social-button-youtube::before {
-  left: 14px;
+  left: 13px;
   top: 16px;
 
   background-image: url("../img/youtube-icon.svg");
@@ -426,11 +435,13 @@ input[type="radio"].visually-hidden {
   margin: 0;
   display: flex;
   align-items: center;
+  margin-right: 100px;
+  margin-top: 6px;
 }
 
 .development span {
-  padding-right: 7px;
-  padding-bottom: 7px;
+  padding-right: 8px;
+  padding-bottom: 8px;
 }
 
 .development svg {
