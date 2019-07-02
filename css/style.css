@@ -339,3 +339,110 @@ input[type="radio"].visually-hidden {
 .booking iframe {
   border: 0;
 }
+
+.sedona-hashtag {
+  font-size: 21px;
+  font-weight: bold;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-social {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-social li {
+  margin-right: 6px;
+}
+
+.footer-social li:nth-child(3n) {
+  margin-right: 0;
+}
+
+.social-button {
+  display: block;
+  position: relative;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
+.social-button::before {
+  position: absolute;
+
+  width: 22px;
+  height: 22px;
+
+  content: "";
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.social-button-tw::before {
+  left: 16px;
+  top: 15px;
+
+  background-image: url("../img/tw-icon.svg");
+}
+
+.social-button-fb::before {
+  left: 17px;
+  top: 12px;
+
+  background-image: url("../img/fb-icon.svg");
+}
+
+.social-button-youtube::before {
+  left: 14px;
+  top: 16px;
+
+  background-image: url("../img/youtube-icon.svg");
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+
+.social-button:active::before {
+  background-color: #669ec0;
+  opacity: 0.3;
+}
+
+.social-button:active .social-button-tw {
+  opacity: 0.3;
+}
+
+.development {
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.development span {
+  padding-right: 7px;
+  padding-bottom: 7px;
+}
+
+.development svg {
+  width: 115px;
+  height: 41px;
+}
+
+.development-link:hover path,
+.development-link:focus path {
+  fill: #81b3d2;
+}
+
+.development-link:active path {
+  fill: #bdbbbc;
+}
