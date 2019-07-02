@@ -575,6 +575,7 @@ body {
 .modal-booking input:focus {
   border: solid 2px #e5e5e5;
   background-color: #ffffff;
+  padding-left: 9px;
 }
 
 .date-button  {
