@@ -62,15 +62,15 @@ input[type="radio"].visually-hidden {
 .site-navigation a {
   display: block;
 
+  box-sizing: border-box;
+  width: 239px;
   margin: 0;
   padding: 0;
-  width: 239px;
   padding-top: 14px;
   padding-bottom: 16px;
-  box-sizing: border-box;
 
-  text-decoration: none;
   text-align: center;
+  text-decoration: none;
 
   color: #000000;
 
@@ -79,9 +79,9 @@ input[type="radio"].visually-hidden {
 
 .header-logo {
   position: absolute;
+  z-index: 1;
   top: 0;
   left: 530px;
-  z-index: 1;
 }
 
 .site-navigation a:hover,
@@ -94,23 +94,23 @@ input[type="radio"].visually-hidden {
 }
 
 .information-link {
-  padding-left: 3px;
   padding-right: 5px;
+  padding-left: 3px;
 }
 
 .photo-link {
-  padding-left: 9px;
   padding-right: 5px;
+  padding-left: 9px;
 }
 
 .map-link {
-  padding-left: 3px;
   padding-right: 5px;
+  padding-left: 3px;
 }
 
 .hotels-link {
-  padding-left: 21px;
   padding-right: 5px;
+  padding-left: 21px;
 }
 
 .main-logo {
@@ -160,48 +160,53 @@ input[type="radio"].visually-hidden {
 }
 
 .about-sedona .reasons {
-  text-align: center;
   margin: 0;
   margin-bottom: 50px;
+
+  text-align: center;
 }
 
 .about-sedona .reasons-list {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .about-sedona .reason-field {
+  box-sizing: border-box;
+
   text-align: center;
 
   background-color: #eeeeee;
-  box-sizing: border-box;
 
   line-height: 21px;
 }
 
 .reasons-list .reason {
-  font-size: 21px;
   margin: 0;
   margin-bottom: 24px;
   padding-top: 49px;
+
+  font-size: 21px;
 }
 
 .reasons-list .main-reason {
-  color: #ffffff;
-  background-color: #81b3d2;
   display: flex;
   flex-wrap: wrap;
+
+  color: #ffffff;
+  background-color: #81b3d2;
 }
 
 .wrapper-main-reason {
-  width: 400px;
   box-sizing: border-box;
+  width: 400px;
 }
 
 .reasons-list .first-reason {
-  padding-left: 60px;
   padding-right: 60px;
+  padding-left: 60px;
 }
 
 .reasons-list p {
@@ -217,11 +222,14 @@ input[type="radio"].visually-hidden {
 }
 
 .descriptions-list {
-  list-style: none;
-  background-color: #ffffff;
-  color: #000000;
-  padding: 0;
   display: flex;
+
+  padding: 0;
+
+  list-style: none;
+
+  color: #000000;
+  background-color: #ffffff;
 }
 
 .descriptions-list li {
@@ -229,10 +237,11 @@ input[type="radio"].visually-hidden {
 }
 
 .descriptions-list h3 {
-  font-size: 21px;
   margin: 0;
   margin-top: 161px;
   margin-bottom: 24px;
+
+  font-size: 21px;
 }
 
 .descriptions-list p {
@@ -258,8 +267,8 @@ input[type="radio"].visually-hidden {
 }
 
 .reasons-list .second-reason {
-  padding-left: 49px;
   padding-right: 49px;
+  padding-left: 49px;
 }
 
 .second-reason .reason {
@@ -283,18 +292,18 @@ input[type="radio"].visually-hidden {
 }
 
 .other-reasons .reason-field-third {
-  padding-left: 95px;
   padding-right: 95px;
+  padding-left: 95px;
 }
 
 .other-reasons .reason-field-fourth {
-  padding-left: 69px;
   padding-right: 68px;
+  padding-left: 69px;
 }
 
 .other-reasons .reason-field-fifth {
-  padding-left: 76px;
   padding-right: 75px;
+  padding-left: 76px;
 }
 
 .booking {
@@ -303,27 +312,33 @@ input[type="radio"].visually-hidden {
 
 .booking h2 {
   margin: 0;
+  margin-bottom: 24px;
+
   font-size: 30px;
   line-height: 36px;
-  margin-bottom: 24px;
 }
 
 .booking p {
-  line-height: 24px;
   margin: 0;
   margin-bottom: 47px;
+
+  line-height: 24px;
 }
 
 .search-hotels-button {
-  font-size: 21px;
   display: block;
+
   width: 568px;
   margin: 0 auto;
-  text-decoration: none;
-  color: #ffffff;
-  background-color: #766357;
   padding-top: 30px;
   padding-bottom: 30px;
+
+  text-decoration: none;
+
+  color: #ffffff;
+  background-color: #766357;
+
+  font-size: 21px;
 }
 
 .search-hotels-button:hover,
@@ -332,40 +347,49 @@ input[type="radio"].visually-hidden {
 }
 
 .search-hotels-button:active {
-  background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
 }
 
 .booking iframe {
+  position: relative;
+
+  margin-bottom: -8px;
+
   border: 0;
 }
 
 .main-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   position: absolute;
   bottom: -1737px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
   width: 1200px;
-  background-color: #ffffff;
+
   opacity: 0.9;
+  background-color: #ffffff;
 }
 
 .sedona-hashtag {
-  font-size: 21px;
-  font-weight: bold;
-
   margin: 0;
   margin-left: 133px;
+
+  font-size: 21px;
+  font-weight: bold;
 }
 
 .footer-social {
   display: flex;
-  list-style: none;
+
   margin: 0;
-  padding: 0;
   margin: 36px 0;
   margin-left: 26px;
+  padding: 0;
+
+  list-style: none;
 }
 
 .footer-social li {
@@ -377,10 +401,13 @@ input[type="radio"].visually-hidden {
 }
 
 .social-button {
-  display: block;
   position: relative;
+
+  display: block;
+
   width: 46px;
   height: 48px;
+
   background-color: #81b3d2;
 }
 
@@ -397,22 +424,22 @@ input[type="radio"].visually-hidden {
 }
 
 .social-button-tw::before {
-  left: 15px;
   top: 17px;
+  left: 15px;
 
   background-image: url("../img/tw-icon.svg");
 }
 
 .social-button-fb::before {
-  left: 17px;
   top: 13px;
+  left: 17px;
 
   background-image: url("../img/fb-icon.svg");
 }
 
 .social-button-youtube::before {
-  left: 13px;
   top: 16px;
+  left: 13px;
 
   background-image: url("../img/youtube-icon.svg");
 }
@@ -423,8 +450,8 @@ input[type="radio"].visually-hidden {
 }
 
 .social-button:active::before {
-  background-color: #669ec0;
   opacity: 0.3;
+  background-color: #669ec0;
 }
 
 .social-button:active .social-button-tw {
@@ -432,11 +459,12 @@ input[type="radio"].visually-hidden {
 }
 
 .development {
-  margin: 0;
   display: flex;
   align-items: center;
-  margin-right: 100px;
+
+  margin: 0;
   margin-top: 6px;
+  margin-right: 100px;
 }
 
 .development span {
