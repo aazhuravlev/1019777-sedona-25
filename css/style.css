@@ -515,10 +515,11 @@ body {
 
 .modal-booking input {
   width: 346px;
+  height: 38px;
   box-sizing: border-box;
   background-color: #f2f2f2;
   border: none;
-  padding: 11px 13px;
+  padding: 3px 11px;
   margin-bottom: 30px;
   text-transform: uppercase;
   color: #000000;
@@ -529,6 +530,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   font-weight: bold;
+  padding-left: 2px;
 }
 
 .modal-booking .check-in-value {
@@ -579,9 +581,8 @@ body {
   position: absolute;
   border: none;
   background-color: transparent;
-  z-index: 1;
-  right: 57px;
-  width: 38px;
+  right: 55px;
+  width: 42px;
   height: 38px;
   padding-top: 4px;
   padding-right: 3px;
