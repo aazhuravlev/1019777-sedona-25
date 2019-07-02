@@ -514,6 +514,7 @@ body {
 }
 
 .modal-booking input {
+  position: relative;
   width: 346px;
   height: 38px;
   box-sizing: border-box;
@@ -541,13 +542,13 @@ body {
   margin-left: 15px;
 }
 
-.modal-booking .people-value-adults {
-  margin-right: 36px;
+.modal-booking .adults-value {
+  margin-left: 37px;
+  margin-right: 49px;
 }
 
-.modal-booking .people-value-childrens {
-  margin-left: 50px;
-  margin-right: 22px;
+.modal-booking .childrens-value {
+  margin-left: 23px;
 }
 
 .modal-booking .people-value {
@@ -555,10 +556,6 @@ body {
   box-sizing: border-box;
   text-align: center;
   margin-bottom: 54px;
-}
-
-.modal-booking .people-value:last-child {
-  margin-right: 0;
 }
 
 .modal-booking input:hover {
@@ -570,7 +567,37 @@ body {
   background-color: #ffffff;
 }
 
-.modal-search-button {
+.date-button  {
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  z-index: 1;
+  right: 57px;
+  width: 38px;
+  height: 38px;
+  padding-top: 4px;
+  padding-right: 3px;
+  box-sizing: border-box;
+}
+
+.check-in-value-button {
+  top: 55px;
+}
+
+.check-out-value-button {
+  top: 122px;
+}
+
+.date-button:hover path,
+.date-button:focus path {
+  fill: #000000;
+}
+
+.date-button:active path {
+  fill: #81b3d2;
+}
+
+.modal-booking .modal-search-button {
   width: 458px;
   padding: 17px 0;
   text-transform: uppercase;
