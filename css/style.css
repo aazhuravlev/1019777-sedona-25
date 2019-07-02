@@ -603,39 +603,27 @@ body {
   height: 38px;
   border: none;
   top: 12px;
-  right: 10px;
   background-color: transparent;
   cursor: pointer;
 }
 
-.people-value-down::before {
+.people-value-up-down::after,
+.people-value-up-down::before {
   position: absolute;
   content: "";
-  top: 12px;
-  left: 17px;
-  width: 3px;
-  height: 12px;
-  transform: rotate(90deg);
+  top: 17px;
+  left: 13px;
+  width: 12px;
+  height: 3px;
   background-color: #cacaca;
 }
 
 .adults-value-down {
-  left: -164px;
+  left: -166px;
 }
 
 .childrens-value-down {
-  left: -115px;
-}
-
-.people-value-up::after,
-.people-value-up::before {
-  position: absolute;
-  content: "";
-  top: 12px;
-  left: 17px;
-  width: 3px;
-  height: 12px;
-  background-color: #cacaca;
+  left: -118px;
 }
 
 .people-value-up::after {
@@ -643,11 +631,23 @@ body {
 }
 
 .adults-value-up {
-  left: -134px;
+  left: -132px;
 }
 
 .childrens-value-up {
-  left: -85px;
+  left: -84px;
+}
+
+.people-value-up-down:hover::after,
+.people-value-up-down:hover::before,
+.people-value-up-down:focus::after,
+.people-value-up-down:focus::before {
+  background-color: #000000;
+}
+
+.people-value-up-down:active::after,
+.people-value-up-down:active::before {
+  background-color: #81b3d2;
 }
 
 .modal-booking .modal-search-button {
@@ -657,4 +657,14 @@ body {
   border: none;
 
   background-color: #81b3d2;
+}
+
+.modal-booking .modal-search-button:hover,
+.modal-booking .modal-search-button:focus {
+  background-color: #669ec0;
+}
+
+.modal-booking .modal-search-button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }
