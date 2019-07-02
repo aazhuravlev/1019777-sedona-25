@@ -514,7 +514,6 @@ body {
 }
 
 .modal-booking input {
-  position: relative;
   width: 346px;
   height: 38px;
   box-sizing: border-box;
@@ -578,6 +577,7 @@ body {
   padding-top: 4px;
   padding-right: 3px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .check-in-value-button {
@@ -595,6 +595,59 @@ body {
 
 .date-button:active path {
   fill: #81b3d2;
+}
+
+.people-value-up-down {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  border: none;
+  top: 12px;
+  right: 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.people-value-down::before {
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: 17px;
+  width: 3px;
+  height: 12px;
+  transform: rotate(90deg);
+  background-color: #cacaca;
+}
+
+.adults-value-down {
+  left: -164px;
+}
+
+.childrens-value-down {
+  left: -115px;
+}
+
+.people-value-up::after,
+.people-value-up::before {
+  position: absolute;
+  content: "";
+  top: 12px;
+  left: 17px;
+  width: 3px;
+  height: 12px;
+  background-color: #cacaca;
+}
+
+.people-value-up::after {
+  transform: rotate(90deg);
+}
+
+.adults-value-up {
+  left: -134px;
+}
+
+.childrens-value-up {
+  left: -85px;
 }
 
 .modal-booking .modal-search-button {
