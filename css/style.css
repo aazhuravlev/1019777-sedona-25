@@ -329,20 +329,26 @@ body {
   line-height: 24px;
 }
 
-.search-hotels-button {
+.button {
   display: block;
 
-  width: 568px;
   margin: 0 auto;
-  padding-top: 30px;
-  padding-bottom: 30px;
 
+  text-align: center;
   text-decoration: none;
 
   color: #ffffff;
-  background-color: #766357;
 
   font-size: 21px;
+  font-weight: bold;
+}
+
+.search-hotels-button {
+  width: 568px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  background-color: #766357;
 }
 
 .search-hotels-button:hover,
@@ -489,11 +495,22 @@ body {
 }
 
 .modal-booking {
-  display: block;
-  width: 568px;
-  min-height: 395px;
-  background-color: #ffffff;
   position: absolute;
   bottom: 198px;
   left: 316px;
+
+  display: block;
+
+  box-sizing: border-box;
+  width: 568px;
+  padding: 55px;
+
+  background-color: #ffffff;
+}
+
+.modal-search-button {
+  width: 458px;
+  padding: 16px 0;
+
+  background-color: #81b3d2;
 }
