@@ -40,12 +40,12 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header nav {
-  display: flex;
-  justify-content: space-between;
+  position: relative;
 }
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
@@ -55,6 +55,9 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
+.site-navigation li:nth-child(4n+2) {
+  margin-right: 244px;
+}
 
 .site-navigation a {
   display: block;
@@ -67,35 +70,17 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
 
   text-decoration: none;
+  text-align: center;
 
   color: #000000;
 
   font-weight: bold;
 }
 
-.left-site-navigation a {
-  text-align: left;
-  padding-left: 72px;
-  padding-right: 10px;
-}
-
-.left-site-navigation .photo-link {
-  padding-left: 73px;
-}
-
-
-.right-site-navigation a {
-  text-align: right;
-  padding-right: 72px;
-  padding-left: 10px;
-}
-
-.right-site-navigation .map-link {
-  padding-right: 78px;
-}
-
 .header-logo {
-  margin-bottom: -23px;
+  position: absolute;
+  top: 0;
+  left: 530px;
   z-index: 1;
 }
 
@@ -108,6 +93,26 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.information-link {
+  padding-left: 3px;
+  padding-right: 5px;
+}
+
+.photo-link {
+  padding-left: 9px;
+  padding-right: 5px;
+}
+
+.map-link {
+  padding-left: 3px;
+  padding-right: 5px;
+}
+
+.hotels-link {
+  padding-left: 21px;
+  padding-right: 5px;
+}
+
 .main-logo {
   position: relative;
 
@@ -115,7 +120,6 @@ input[type="radio"].visually-hidden {
   height: 508px;
   margin-bottom: 60px;
 
-  background-color: #81b3d2;
   background-color: #81b3d2;
   background-image: url("../img/background-photo.jpg");
   background-repeat: no-repeat;
@@ -320,4 +324,18 @@ input[type="radio"].visually-hidden {
   background-color: #766357;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.search-hotels-button:hover,
+.search-hotels-button:focus {
+  background-color: #604e43;
+}
+
+.search-hotels-button:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.booking iframe {
+  border: 0;
 }
