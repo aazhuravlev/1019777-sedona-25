@@ -39,6 +39,10 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
 }
 
+body {
+  position: relative;
+}
+
 .main-header nav {
   position: relative;
 }
@@ -352,8 +356,6 @@ input[type="radio"].visually-hidden {
 }
 
 .booking iframe {
-  position: relative;
-
   margin-bottom: -8px;
 
   border: 0;
@@ -361,7 +363,7 @@ input[type="radio"].visually-hidden {
 
 .main-footer {
   position: absolute;
-  bottom: -1737px;
+  bottom: 0;
 
   display: flex;
   align-items: center;
@@ -484,4 +486,14 @@ input[type="radio"].visually-hidden {
 
 .development-link:active path {
   fill: #bdbbbc;
+}
+
+.modal-booking {
+  display: block;
+  width: 568px;
+  min-height: 395px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 198px;
+  left: 316px;
 }
