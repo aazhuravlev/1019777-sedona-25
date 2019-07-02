@@ -166,17 +166,18 @@
       </p>
     </footer>
     <section class="modal-booking">
-      <label for="chek-in-date">Дата заезда:</label>
-      <input type="text" id="check-in-date" placeholder="24 апреля 2017">
-      <label for="chek-out-date">Дата заезда:</label>
-      <input type="text" id="check-out-date" placeholder="4 июля 2017">
-      <div class="wrapper-modal-booking">
-          <label for="adults">Взрослые:</label>
-          <input type="text" id="adults" placeholder="2">
-          <label for="childrens">Дети:</label>
-          <input type="text" id="childrens" placeholder="0">
-      </div>
-      <a href="#" class="button modal-search-button">Найти</a>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="chek-in-date" class="check-in-label">Дата заезда:</label>
+        <input type="text" id="check-in-date" class="check-in-value" placeholder="24 апреля 2017">
+        <label for="chek-out-date" class="check-out-label">Дата выезда:</label>
+        <input type="text" id="check-out-date" class="check-out-value" placeholder="4 июля 2017">
+        <label for="adults" class="people-value-adults">Взрослые:</label>
+        <input type="text" id="adults" pattern="[0-9]{2}" class="people-value" placeholder="2">
+        <label for="childrens" class="people-value-childrens">Дети:</label>
+        <input type="text" id="childrens" pattern="[0-9]{2}" class="people-value" placeholder="0">
+        <button type="submit" class="button modal-search-button">Найти</a>
+      </form>
+
     </section>
   </body>
 </html>

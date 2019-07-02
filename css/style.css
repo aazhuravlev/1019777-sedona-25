@@ -364,7 +364,7 @@ body {
 .booking iframe {
   margin-bottom: -8px;
 
-  border: 0;
+  border: none;
 }
 
 .main-footer {
@@ -506,11 +506,75 @@ body {
   padding: 55px;
 
   background-color: #ffffff;
+  text-align: right;
+}
+
+.modal-booking label {
+  font-weight: bold;
+}
+
+.modal-booking input {
+  width: 346px;
+  height: 38px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 11px 13px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+}
+
+.modal-booking input::placeholder {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+}
+
+.modal-booking .check-in-value {
+  margin-bottom: 29px;
+  margin-left: 18px;
+}
+
+.modal-booking .check-out-value {
+  margin-left: 15px;
+}
+
+.modal-booking .people-value-adults {
+  margin-right: 36px;
+}
+
+.modal-booking .people-value-childrens {
+  margin-left: 50px;
+  margin-right: 22px;
+}
+
+.modal-booking .people-value {
+  width: 114px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 54px;
+}
+
+.modal-booking .people-value:last-child {
+  margin-right: 0;
+}
+
+.modal-booking input:hover {
+  background-color: #ebebeb;
+}
+
+.modal-booking input:focus {
+  border: solid 2px #e5e5e5;
+  background-color: #ffffff;
 }
 
 .modal-search-button {
   width: 458px;
-  padding: 16px 0;
+  padding: 17px 0;
+  text-transform: uppercase;
+  border: none;
 
   background-color: #81b3d2;
 }
