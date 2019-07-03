@@ -7,6 +7,7 @@ link.addEventListener("click", function (evt) {
   evt.preventDefault();
   if (document.querySelector(".modal-hide")) {
     popup.classList.remove("modal-hide");
+    checkIn.focus();
   } else {
     popup.classList.add("modal-hide");
   }
