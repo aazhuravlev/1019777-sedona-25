@@ -106,22 +106,22 @@ body {
   color: #766357;
 }
 
-.information-link {
+.site-navigation .information-link {
   padding-right: 5px;
   padding-left: 3px;
 }
 
-.photo-link {
+.site-navigation .photo-link {
   padding-right: 5px;
   padding-left: 9px;
 }
 
-.map-link {
+.site-navigation .map-link {
   padding-right: 5px;
   padding-left: 3px;
 }
 
-.hotels-link {
+.site-navigation .hotels-link {
   padding-right: 5px;
   padding-left: 21px;
 }
