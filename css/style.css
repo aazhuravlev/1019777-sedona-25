@@ -783,6 +783,15 @@ body {
   margin-bottom: 4px;
 }
 
+.hotel-name:hover,
+.hotel-name:focus {
+  color: #81b3d2;
+}
+
+.hotel-name:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .criteries-list {
   display: flex;
   list-style: none;
@@ -822,6 +831,26 @@ body {
 .booking-button {
   width: 142px;
   background-color: #766357;
+}
+
+.more-button:hover,
+.more-button:focus {
+  background-color: #669ec0;
+}
+
+.more-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.booking-button:hover,
+.booking-button:focus {
+  background-color: #604e43;
+}
+
+.booking-button:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
 }
 
 .hotel-rating {
