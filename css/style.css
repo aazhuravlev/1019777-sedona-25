@@ -101,6 +101,11 @@ body {
   color: #766357;
 }
 
+.site-navigation .actual-link:hover,
+.site-navigation .actual-link:focus {
+  color: #766357;
+}
+
 .information-link {
   padding-right: 5px;
   padding-left: 3px;
