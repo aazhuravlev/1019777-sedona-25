@@ -616,6 +616,130 @@ body {
   line-height: 20px;
 }
 
+.sorting {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+  line-height: 18px;
+  padding: 34px 71px 30px 71px;
+}
+
+.sorting-results {
+  font-size: 21px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.name-area {
+  font: inherit;
+  margin: 0;
+  margin-top: 2px;
+  margin-left: 48px;
+}
+
+.type-of-sortings {
+  margin-top: 2px;
+  margin-left: 40px;
+}
+
+.type-of-sorting {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dotted #81b3d2;
+  margin-right: 30px;
+}
+
+.type-of-sorting:last-child {
+  margin-right: 0;
+}
+
+.type-of-sorting:hover,
+.type-of-sorting:focus {
+  color: #81b3d2;
+}
+
+.type-of-sorting:active {
+  color: #000000;
+  border: none;
+}
+
+.active-sorting {
+  color: #81b3d2;
+  border: none;
+}
+
+.arrows {
+  margin-left: auto;
+  padding-right: 3px;
+}
+
+.arrow {
+  font-size: 0;
+  margin-left: 10px;
+}
+
+.arrow::before {
+  display: inline-block;
+
+  content: "";
+  vertical-align: middle;
+
+  border: 10px solid #cacaca;
+  border-right-width: 5px;
+  border-right-color: transparent;
+  border-left-width: 5px;
+  border-left-color: transparent;
+
+  font-size: 0;
+  margin-bottom: 5px;
+}
+
+.arrow-up::before {
+  border-top-width: 0;
+}
+
+.arrow-down::before {
+  border-bottom-width: 0;
+}
+
+.arrows .arrow-active::before {
+  border-color: #81b3d2;
+  border-right-width: 5px;
+  border-right-color: transparent;
+  border-left-width: 5px;
+  border-left-color: transparent;
+}
+
+.arrow:last-child {
+  margin-right: 0;
+}
+
+.arrow:hover::before,
+.arrow:focus::before {
+  border-color: #000000;
+  border-right-width: 5px;
+  border-right-color: transparent;
+  border-left-width: 5px;
+  border-left-color: transparent;
+}
+
+.arrow:active::before {
+  border-color: #81b3d2;
+  border-right-width: 5px;
+  border-right-color: transparent;
+  border-left-width: 5px;
+  border-left-color: transparent;
+}
+
+.arrow-active:hover::before,
+.arrow-active:focus::before {
+  border-color: #81b3d2;
+  border-right-width: 5px;
+  border-right-color: transparent;
+  border-left-width: 5px;
+  border-left-color: transparent;
+}
+
 .main-footer {
   position: absolute;
   bottom: 0;
