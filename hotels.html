@@ -16,11 +16,50 @@
           <li><a href="#" class="map-link">Карта штата</a></li>
           <li><a href="hotels.html" class="hotels-link">Гостиницы</a></li>
         </ul>
-        <a class="header-logo"><img src="img/logo.svg" width="140" height="71" alt="Логотип Седоны"></a>
+        <a href="index.html" class="header-logo"><img src="img/logo.svg" width="140" height="71" alt="Логотип Седоны"></a>
       </nav>
     </header>
     <main>
-
+      <h1 class="visually-hidden">Поиск жилья в Седоне</h1>
+      <section class="filters">
+        <h2 class="visually-hidden">Фильтр:</h2>
+        <form action="https://echo.htmlacademy.ru" method="get" class="filter">
+          <fieldset class="convenience">
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="pool" id="pool" class="visually-hidden">
+                <label for="pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="parking" id="parking" class="visually-hidden">
+                <label for="parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wi-fi" id="wi-fi" class="visually-hidden">
+                <label for="wi-fi">wi-fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="accommodation">
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="hotel" id="hotel" class="visually-hidden">
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" name="motel" id="motel" class="visually-hidden">
+                <label for="motel">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="apartment" id="apartment" class="visually-hidden">
+                <label for="apartment">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </section>
 
 
 
