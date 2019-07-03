@@ -13,7 +13,7 @@ body {
   background-color: #ffffff;
   box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   font-weight: normal;
   line-height: 26px;
@@ -396,7 +396,7 @@ body {
   border: none;
 }
 
-.filters legend {
+.type-of-filter {
   margin-bottom: 24px;
 
   font-size: 16px;
@@ -464,6 +464,151 @@ body {
 
 .filter-option input:disabled + label {
   opacity: 0.3;
+}
+
+.filter-checkbox:focus + label {
+  outline-width: 5px;
+  outline-style: auto;
+  outline-color: #4D90FE;
+  outline-offset: -2px;
+}
+
+.filters .price {
+  margin-left: auto;
+}
+
+.price .type-of-filter {
+  margin-bottom: 10px;
+  margin-left: 2px;
+}
+
+.filter-range {
+  width: 320px;
+}
+
+.price-controls {
+  position: relative;
+
+  box-sizing: border-box;
+  margin-bottom: 19px;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  content: "";
+  transform: translate(-50%, -50%);
+
+  background: #ffffff;
+}
+
+.price-controls label {
+  display: inline-block;
+
+  cursor: pointer;
+  vertical-align: middle;
+
+  font-size: 14px;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 66px;
+}
+
+.price-controls .max-price {
+  padding-left: 53px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+  padding: 6px 0;
+
+  color: inherit;
+  border: none;
+  background: none;
+
+  font: inherit;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.price .toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 20px;
+  height: 20px;
+  padding: 0;
+
+  cursor: pointer;
+
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+}
+
+.toggle:hover,
+.toggle:focus {
+  width: 22px;
+  height: 22px;
+
+  border: 9px solid #ffffff;
+}
+
+.toggle-min {
+  left: 2px;
+}
+
+.toggle-max {
+  left: 79%;
+}
+
+.button-price {
+  display: block;
+
+  margin-left: 86px;
+  padding: 6px 34px;
+
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  background: transparent;
+
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .main-footer {

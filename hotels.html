@@ -25,7 +25,7 @@
         <h2 class="visually-hidden">Фильтр:</h2>
         <form action="https://echo.htmlacademy.ru" method="get" class="filter">
           <fieldset class="convenience">
-            <legend>Инфраструктура:</legend>
+            <legend class="type-of-filter">Инфраструктура:</legend>
             <ul class="list-of-filters">
               <li class="filter-option">
                 <input type="checkbox" name="pool" id="pool" class="visually-hidden filter-checkbox" checked>
@@ -42,7 +42,7 @@
             </ul>
           </fieldset>
           <fieldset class="accommodation">
-            <legend>Тип жилья:</legend>
+            <legend class="type-of-filter">Тип жилья:</legend>
             <ul class="list-of-filters">
               <li class="filter-option">
                 <input type="checkbox" name="hotel" id="hotel" class="visually-hidden filter-checkbox" checked>
@@ -58,11 +58,25 @@
               </li>
             </ul>
           </fieldset>
+          <fieldset class="price">
+            <legend class="type-of-filter">Стоимость в сутки (р):</legend>
+            <div class="filter-range">
+              <div class="price-controls">
+                <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <button type="button" class="toggle toggle-min"></button>
+                <button type="button" class="toggle toggle-max"></button>
+              </div>
+              <button class="button-price" type="submit">Показать</button>
+            </div>
+          </fieldset>
         </form>
       </section>
-
-
-
     </main>
     <footer class="main-footer">
       <p class="sedona-hashtag">#visitSEDONA</p>
