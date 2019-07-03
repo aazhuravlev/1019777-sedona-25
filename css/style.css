@@ -373,7 +373,6 @@ body {
 
 .filters {
   background-color: #766357;
-
   background-image: url("../img/filter-background.jpg");
   background-repeat: no-repeat;
   background-position: 0px -276px;
@@ -381,28 +380,34 @@ body {
 
 .filters form {
   display: flex;
-  color: #ffffff;
-  line-height: 21px;
+
   padding: 27px 71px;
+
+  color: #ffffff;
+
+  line-height: 21px;
 }
 
 .filters fieldset {
-  border: none;
-  padding: 0;
   margin: 0;
   margin-bottom: 3px;
+  padding: 0;
+
+  border: none;
 }
 
 .filters legend {
+  margin-bottom: 24px;
+
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 24px;
 }
 
 .list-of-filters {
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 
 }
 
@@ -429,12 +434,13 @@ body {
 
 .filter-checkbox + label::before {
   display: inline-block;
-  vertical-align: middle;
-  margin-right: 13px;
+
   width: 27px;
   height: 23px;
+  margin-right: 13px;
 
   content: "";
+  vertical-align: middle;
 
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
@@ -443,13 +449,13 @@ body {
 
 .filter-checkbox:checked + label::before {
   display: inline-block;
-  vertical-align: middle;
-  margin-right: 13px;
 
   width: 27px;
   height: 23px;
+  margin-right: 13px;
 
   content: "";
+  vertical-align: middle;
 
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
@@ -602,12 +608,12 @@ body {
   width: 568px;
   padding: 55px;
 
-  background-color: #ffffff;
-  text-align: right;
-
-  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   animation-name: appearance;
   animation-duration: 0.1s;
+  text-align: right;
+
+  background-color: #ffffff;
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
 .modal-booking label {
@@ -615,23 +621,29 @@ body {
 }
 
 .modal-booking input {
+  box-sizing: border-box;
   width: 346px;
   height: 38px;
-  box-sizing: border-box;
-  background-color: #f2f2f2;
-  border: none;
-  padding: 3px 11px;
   margin-bottom: 30px;
+  padding: 3px 11px;
+
   text-transform: uppercase;
+
   color: #000000;
+  border: none;
+  background-color: #f2f2f2;
+
   font-weight: bold;
 }
 
 .modal-booking input::placeholder {
-  text-transform: uppercase;
-  color: #000000;
-  font-weight: bold;
   padding-left: 2px;
+
+  text-transform: uppercase;
+
+  color: #000000;
+
+  font-weight: bold;
 }
 
 .modal-booking .check-in-value {
@@ -644,8 +656,8 @@ body {
 }
 
 .modal-booking .adults-value {
-  margin-left: 37px;
   margin-right: 33px;
+  margin-left: 37px;
 }
 
 .modal-booking .childrens-value {
@@ -653,10 +665,11 @@ body {
 }
 
 .modal-booking .people-value {
-  width: 114px;
   box-sizing: border-box;
-  text-align: center;
+  width: 114px;
   margin-bottom: 0;
+
+  text-align: center;
 }
 
 .modal-booking input:hover {
@@ -664,9 +677,11 @@ body {
 }
 
 .wrapper-modal-booking {
-  display: flex;
-  margin-bottom: 54px;
   position: relative;
+
+  display: flex;
+
+  margin-bottom: 54px;
 }
 
 .wrapper-modal-booking label {
@@ -674,22 +689,26 @@ body {
 }
 
 .modal-booking input:focus {
+  padding-left: 9px;
+
   border: solid 2px #e5e5e5;
   background-color: #ffffff;
-  padding-left: 9px;
 }
 
 .date-button  {
   position: absolute;
-  border: none;
-  background-color: transparent;
   right: 55px;
+
+  box-sizing: border-box;
   width: 42px;
   height: 38px;
   padding-top: 4px;
   padding-right: 3px;
-  box-sizing: border-box;
+
   cursor: pointer;
+
+  border: none;
+  background-color: transparent;
 }
 
 .check-in-value-button {
@@ -711,22 +730,28 @@ body {
 
 .people-value-up-down {
   position: relative;
+  bottom: 38px;
+
   width: 38px;
   height: 38px;
-  border: none;
-  bottom: 38px;
-  background-color: transparent;
+
   cursor: pointer;
+
+  border: none;
+  background-color: transparent;
 }
 
 .people-value-up-down::after,
 .people-value-up-down::before {
   position: absolute;
-  content: "";
   top: 18px;
   left: 12px;
+
   width: 12px;
   height: 3px;
+
+  content: "";
+
   background-color: #cacaca;
 }
 
@@ -761,9 +786,10 @@ body {
 .modal-booking .modal-search-button {
   width: 458px;
   padding: 17px 0;
-  text-transform: uppercase;
-  border: none;
 
+  text-transform: uppercase;
+
+  border: none;
   background-color: #81b3d2;
 }
 
@@ -773,19 +799,19 @@ body {
 }
 
 .modal-booking .modal-search-button:active {
-  background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
 }
 
 @keyframes appearance {
   0% {
-    transform-origin: 50% 0;
     transform: scale(1, 0);
+    transform-origin: 50% 0;
   }
 
   100% {
-    transform-origin: 50% 0;
     transform: scale(1, 1);
+    transform-origin: 50% 0;
   }
 }
 
