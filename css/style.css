@@ -97,6 +97,10 @@ body {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.site-navigation .actual-link {
+  color: #766357;
+}
+
 .information-link {
   padding-right: 5px;
   padding-left: 3px;
@@ -368,7 +372,6 @@ body {
 }
 
 .filters {
-  height: 217px;
   background-color: #766357;
 
   background-image: url("../img/filter-background.jpg");
@@ -387,29 +390,74 @@ body {
   border: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 3px;
 }
 
 .filters legend {
   font-size: 16px;
   font-weight: bold;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 }
 
-.filters ul {
+.list-of-filters {
   list-style: none;
   margin: 0;
+  padding: 0;
+
 }
 
-.filters li {
-  margin-bottom: 25px;
+.list-of-filters .filter-option {
+  margin-bottom: 23px;
+  margin-left: 1px;
+}
+
+.list-of-filters .filter-option:last-child {
+  margin-bottom: 0;
+}
+
+.filters label {
+  cursor: pointer;
 }
 
 .filters .accommodation {
   margin-left: 118px;
 }
 
-.accommodation li {
-  margin-left: 2px;
+.accommodation .filter-option {
+  margin-left: 1px;
+}
+
+.filter-checkbox + label::before {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 13px;
+  width: 27px;
+  height: 23px;
+
+  content: "";
+
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-checkbox:checked + label::before {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 13px;
+
+  width: 27px;
+  height: 23px;
+
+  content: "";
+
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-option input:disabled + label {
+  opacity: 0.3;
 }
 
 .main-footer {
