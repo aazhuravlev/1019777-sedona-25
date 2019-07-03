@@ -5,7 +5,11 @@ var checkIn = popup.querySelector(".check-in-value");
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup.classList.add("modal-hide");
+  if (document.querySelector(".modal-hide")) {
+    popup.classList.remove("modal-hide");
+  } else {
+    popup.classList.add("modal-hide");
+  }
 });
 
 window.addEventListener("keydown", function (evt) {
