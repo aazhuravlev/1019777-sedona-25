@@ -618,23 +618,28 @@ body {
 
 .sorting {
   display: flex;
+
+  padding: 34px 71px 30px 71px;
+
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
   font-size: 12px;
   line-height: 18px;
-  padding: 34px 71px 30px 71px;
 }
 
 .sorting-results {
+  margin: 0;
+
   font-size: 21px;
   font-weight: bold;
-  margin: 0;
 }
 
 .name-area {
-  font: inherit;
   margin: 0;
   margin-top: 2px;
   margin-left: 48px;
+
+  font: inherit;
 }
 
 .type-of-sortings {
@@ -643,10 +648,12 @@ body {
 }
 
 .type-of-sorting {
+  margin-right: 30px;
+
   text-decoration: none;
+
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #81b3d2;
-  margin-right: 30px;
 }
 
 .type-of-sorting:last-child {
@@ -674,12 +681,15 @@ body {
 }
 
 .arrow {
-  font-size: 0;
   margin-left: 10px;
+
+  font-size: 0;
 }
 
 .arrow::before {
   display: inline-block;
+
+  margin-bottom: 5px;
 
   content: "";
   vertical-align: middle;
@@ -691,7 +701,6 @@ body {
   border-left-color: transparent;
 
   font-size: 0;
-  margin-bottom: 5px;
 }
 
 .arrow-up::before {
@@ -741,15 +750,18 @@ body {
 }
 
 .results-list {
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 .result-item {
   display: flex;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
   padding: 25px 72px 22px 72px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .hotel-photo {
@@ -758,6 +770,7 @@ body {
 
 .wrapper-hotel-information {
   flex-grow: 1;
+
   margin-left: 30px;
 }
 
@@ -768,19 +781,22 @@ body {
 
 .top-wrapper a {
   text-decoration: none;
+
   color: #000000;
 }
 
 .top-wrapper span {
   color: #81b3d2;
+
   font-size: 18px;
 }
 
 .hotel-name {
   margin: 0;
+  margin-bottom: 4px;
+
   font-size: 21px;
   font-weight: bold;
-  margin-bottom: 4px;
 }
 
 .hotel-name:hover,
@@ -794,11 +810,13 @@ body {
 
 .criteries-list {
   display: flex;
-  list-style: none;
-  padding: 0;
-  width: 181px;
   justify-content: space-between;
+
+  width: 181px;
   margin-bottom: 12px;
+  padding: 0;
+
+  list-style: none;
 }
 
 .bottom-wrapper {
@@ -808,28 +826,36 @@ body {
 
 .buttons-list {
   display: flex;
-  list-style: none;
+
   padding: 0;
+
+  list-style: none;
 }
 
 .result-button {
   display: block;
-  text-decoration: none;
-  line-height: 21px;
-  font-weight: bold;
-  color: #ffffff;
-  text-align: center;
+
   padding: 3px 0;
+
+  text-align: center;
+  text-decoration: none;
+
+  color: #ffffff;
+
+  font-weight: bold;
+  line-height: 21px;
 }
 
 .more-button {
   width: 110px;
-  background-color: #81b3d2;
   margin-right: 6px;
+
+  background-color: #81b3d2;
 }
 
 .booking-button {
   width: 142px;
+
   background-color: #766357;
 }
 
@@ -854,13 +880,16 @@ body {
 }
 
 .hotel-rating {
-  margin: 0;
-  color: #666666;
-  line-height: 21px;
   width: 110px;
-  text-align: center;
-  background-color: #f2f2f2;
+  margin: 0;
   padding: 3px 0;
+
+  text-align: center;
+
+  color: #666666;
+  background-color: #f2f2f2;
+
+  line-height: 21px;
 }
 
 .main-footer {
