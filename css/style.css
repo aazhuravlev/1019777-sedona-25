@@ -381,6 +381,10 @@ body {
   background-color: #ffffff;
 }
 
+.inner-page .main-footer {
+  position: relative;
+}
+
 .sedona-hashtag {
   margin: 0;
   margin-left: 133px;
